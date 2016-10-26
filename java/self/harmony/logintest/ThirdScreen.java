@@ -28,9 +28,9 @@ public class ThirdScreen extends AppCompatActivity {
         setContentView(R.layout.third_screen);
         loadToken();
 
-        editText1 = (EditText) findViewById(R.id.editText3);
-        editText2 = (EditText) findViewById(R.id.editText4);
-        editText3 = (EditText) findViewById(R.id.editText5);
+        editText1 = (EditText) findViewById(R.id.editText5);
+        editText2 = (EditText) findViewById(R.id.editText3);
+        editText3 = (EditText) findViewById(R.id.editText4);
         button = (Button) findViewById(R.id.button3);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,6 @@ public class ThirdScreen extends AppCompatActivity {
             String data = "";
             try {
                 HttpRequest request = HttpRequest.patch("http://52.29.233.100/api/v1/users/me?token="+token); //коннектим к базе
-                //request.part("X-Auth-Token", token);
                 request.part("first_name", first_name);                         //постим first_name"
                 request.part("last_name", last_name);                         //постим last_name
                 request.part("nickname", nickname);                         //постим nickname

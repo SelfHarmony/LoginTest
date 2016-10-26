@@ -324,22 +324,24 @@ public class NativeCameraFragment extends Fragment {
                     switch (display.getRotation())
                     {
                         case Surface.ROTATION_0:
-                            previewWidth = mPreviewSize.height;
-                            previewHeight = mPreviewSize.width;
-                            mCamera.setDisplayOrientation(90);
+                            previewWidth = mPreviewSize.width;
+                            previewHeight = mPreviewSize.height;
+
                             break;
                         case Surface.ROTATION_90:
                             previewWidth = mPreviewSize.width;
                             previewHeight = mPreviewSize.height;
+                            mCamera.setDisplayOrientation(90);
                             break;
                         case Surface.ROTATION_180:
-                            previewWidth = mPreviewSize.height;
-                            previewHeight = mPreviewSize.width;
+                            previewWidth = mPreviewSize.width;
+                            previewHeight = mPreviewSize.height;
+                            mCamera.setDisplayOrientation(180);
                             break;
                         case Surface.ROTATION_270:
                             previewWidth = mPreviewSize.width;
                             previewHeight = mPreviewSize.height;
-                            mCamera.setDisplayOrientation(180);
+                            mCamera.setDisplayOrientation(270);
                             break;
                     }
                 }
