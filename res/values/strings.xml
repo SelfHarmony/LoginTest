@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginTest</string>
+    <string name="ok_button">Регистрация</string>
+    <string name="set_number_text">Введите номер</string>
+    <string name="get_token_button">Get token</string>
+    <string name="get_token_textview">get your token friend</string>
+</resources>
