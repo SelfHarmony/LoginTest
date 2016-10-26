@@ -84,7 +84,7 @@ public class ThirdScreen extends AppCompatActivity {
         protected void onPostExecute(String s) {
             Log.e(this.getClass().getSimpleName(), s);
 
-                Intent intent = new Intent(context, Camera.class);
+                Intent intent = new Intent(context, CameraActivity.class);
                 startActivity(intent);
 
         }
